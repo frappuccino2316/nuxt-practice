@@ -10,7 +10,9 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
+    "@testing-library/vue": "^7.0.0",
     "@types/node": "^18",
-    "nuxt": "^3.6.1"
+    "nuxt": "^3.6.1",
+    "vitest": "^0.32.2"
   }
 }
