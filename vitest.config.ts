@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitest/config';
-import vue from '@vitejs/plugin-vue';
+import Vue from '@vitejs/plugin-vue';
+import AutoImport from 'unplugin-auto-import/vite';
 
 export default defineConfig({
   test: {
@@ -12,5 +13,10 @@ export default defineConfig({
       all: true,
     },
   },
-  plugins: [vue()],
+  plugins: [
+    Vue(),
+    AutoImport({
+      imports: ['vue'],
+    }),
+  ],
 });
